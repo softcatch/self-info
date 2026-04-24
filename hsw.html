@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>자기소개</title>
+    <style>
+      body {
+        font-family: 'Arial', sans-serif;
+        background: linear-gradient(135deg, #74ebd5, #acb6e5);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      .intro-card {
+        background: white;
+        border-radius: 12px;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        padding: 20px;
+        width: 300px;
+        text-align: center;
+        transition:
+          transform 0.5s ease,
+          box-shadow 0.5s ease;
+        cursor: pointer;
+      }
+      .intro-card:hover {
+        transform: scale(1.05) rotate(1deg);
+        box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+      }
+      .hidden-text {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.7s ease;
+      }
+      .intro-card.active .hidden-text {
+        max-height: 200px;
+        margin-top: 15px;
+      }
+      h2 {
+        color: #333;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="intro-card" id="card">
+      <h2>안녕하세요 👋</h2>
+      <p>저는 개발자 홍상우 입니다.</p>
+      <div class="hidden-text">
+        <p>
+          새로운 기술을 배우는 걸 좋아하고,<br />
+          팀워크와 협업을 중요하게 생각합니다.<br />
+          요즘은 웹 프론트엔드와 AI에 관심이 많습니다 🚀
+        </p>
+      </div>
+    </div>
+
+    <script>
+      const card = document.getElementById('card');
+      card.addEventListener('click', () => {
+        card.classList.toggle('active');
+      });
+    </script>
+  </body>
+</html>
