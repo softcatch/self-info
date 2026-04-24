@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>이대주 자기소개</title>
+  </head>
+  <body>
+    <h1>안녕하세요, 이대주입니다.</h1>
+
+    <p>
+      현재 웹 개발을 배우고 있으며, Vue와 JavaScript를 중심으로 프론트엔드 개발
+      역량을 키우고 있습니다.
+    </p>
+
+    <h2>관심 분야</h2>
+    <ul>
+      <li>프론트엔드 개발</li>
+      <li>Vue.js</li>
+      <li>JavaScript</li>
+      <li>팀 프로젝트 협업</li>
+    </ul>
+
+    <h2>목표</h2>
+    <p>
+      꾸준히 학습하고 직접 만들어보는 과정을 통해 실무에 강한 개발자로 성장하는
+      것이 목표입니다.
+    </p>
+  </body>
+</html>
+<button onclick="rainbowEffect()">누르지마세요!!</button>
+
+<script>
+  function rainbowEffect() {
+    document.body.classList.add('rainbow');
+
+    setTimeout(() => {
+      document.body.classList.remove('rainbow');
+    }, 5000);
+  }
+</script>
+
+<style>
+  body {
+    transition: background 0.5s;
+  }
+
+  .rainbow {
+    animation: rainbowLight 5s linear;
+  }
+
+  @keyframes rainbowLight {
+    0% {
+      background: red;
+    }
+    16% {
+      background: orange;
+    }
+    32% {
+      background: yellow;
+    }
+    48% {
+      background: green;
+    }
+    64% {
+      background: blue;
+    }
+    80% {
+      background: indigo;
+    }
+    100% {
+      background: violet;
+    }
+  }
+</style>
