@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>지민 자기소개</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&family=Noto+Sans+KR:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        background: #f4f4f0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        font-family: 'Noto Sans KR', sans-serif;
+      }
+
+      .card {
+        max-width: 520px;
+        width: 100%;
+        background: #fff;
+        border: 1.5px solid #ddd;
+        border-radius: 20px;
+        overflow: hidden;
+        margin: 2rem;
+      }
+
+      .header {
+        background: #1a1a2e;
+        padding: 2rem 2rem 1.5rem;
+      }
+
+      .tag-row {
+        display: flex;
+        gap: 6px;
+        flex-wrap: wrap;
+        margin-bottom: 1rem;
+      }
+
+      .tag {
+        font-size: 11px;
+        padding: 3px 10px;
+        border-radius: 20px;
+        font-weight: 500;
+        letter-spacing: 0.03em;
+      }
+
+      .tag-blue {
+        background: #1a3a5c;
+        color: #85b7eb;
+      }
+      .tag-teal {
+        background: #083428;
+        color: #5dcaa5;
+      }
+      .tag-purple {
+        background: #26215c;
+        color: #afa9ec;
+      }
+      .tag-amber {
+        background: #412402;
+        color: #ef9f27;
+      }
+
+      .name {
+        font-family: 'Nanum Pen Script', cursive;
+        font-size: 3rem;
+        color: #fff;
+        line-height: 1.1;
+        margin-bottom: 0.3rem;
+      }
+
+      .subtitle {
+        font-size: 13px;
+        color: #888;
+        letter-spacing: 0.05em;
+      }
+
+      .dot {
+        display: inline-block;
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background: #5dcaa5;
+        margin-right: 6px;
+        vertical-align: middle;
+        animation: blink 1.6s infinite;
+      }
+
+      @keyframes blink {
+        0%,
+        100% {
+          opacity: 1;
+        }
+        50% {
+          opacity: 0.2;
+        }
+      }
+
+      .body {
+        padding: 1.5rem 2rem;
+      }
+
+      .section {
+        margin-bottom: 1.4rem;
+      }
+
+      .section-label {
+        font-size: 11px;
+        color: #aaa;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        margin-bottom: 6px;
+      }
+
+      .section-content {
+        font-size: 14px;
+        color: #222;
+        line-height: 1.7;
+      }
+
+      .quote-box {
+        border-left: 3px solid #5dcaa5;
+        padding: 10px 14px;
+        background: #f9f9f9;
+        border-radius: 0 8px 8px 0;
+        font-size: 14px;
+        color: #222;
+        line-height: 1.7;
+      }
+
+      .divider {
+        height: 0.5px;
+        background: #eee;
+        margin: 1.4rem 0;
+      }
+
+      .stack-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 6px;
+        margin-top: 4px;
+      }
+
+      .pill {
+        font-size: 12px;
+        padding: 4px 12px;
+        border-radius: 20px;
+        background: #f4f4f4;
+        color: #555;
+        border: 0.5px solid #e0e0e0;
+      }
+
+      .footer {
+        padding: 1rem 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-top: 0.5px solid #eee;
+      }
+
+      .footer-left {
+        font-size: 12px;
+        color: #aaa;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <div class="header">
+        <div class="tag-row">
+          <span class="tag tag-blue">Full-Stack Dev</span>
+          <span class="tag tag-teal">Java / Vue.js</span>
+          <span class="tag tag-purple">AI 도구 활용</span>
+          <span class="tag tag-amber">성장 중 🌱</span>
+        </div>
+        <div class="name">지민</div>
+        <div class="subtitle">
+          <span class="dot"></span>KB국민은행 부트캠프 수강 중
+        </div>
+      </div>
+
+      <div class="body">
+        <div class="section">
+          <div class="section-label">한 줄 소개</div>
+          <div class="quote-box">
+            고양이가 되고 싶은 인간입니다. 낮잠 전문가.
+          </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="section">
+          <div class="section-label">MBTI</div>
+          <div class="section-content">한번 누우면 일어날 생각이 없는 유형</div>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="section">
+          <div class="section-label">좋아하는 것</div>
+          <div class="stack-row">
+            <span class="pill">❄️ 에어컨에 이불</span>
+            <span class="pill">☕ 시원한 아메리카노</span>
+            <span class="pill">🐶 강아지</span>
+            <span class="pill">🍔 햄버거</span>
+          </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="section">
+          <div class="section-label">TMI</div>
+          <div class="section-content">
+            알람 1개만 맞춰도 한번에 벌떡 일어남.<br />
+            배고프면 뭐 먹을지 30분 고민함.<br />
+            근데 결국 롯데리아 감 (매번).
+          </div>
+        </div>
+      </div>
+
+      <div class="footer">
+        <div class="footer-left">여기까지 읽었으면 우리 친한 거 맞음 🤝</div>
+      </div>
+    </div>
+  </body>
+</html>

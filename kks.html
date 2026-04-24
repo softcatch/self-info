@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ki-Sun Kim</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: white;
+        margin: 0;
+        padding: 0;
+      }
+      header {
+        background-color: dimgray;
+        color: white;
+        padding: 1rem;
+        text-align: center;
+      }
+      nav {
+        background-color: darkgray;
+        padding: 0.5rem;
+        text-align: center;
+      }
+      nav a {
+        color: white;
+        text-decoration: none;
+        margin: 0 1rem;
+      }
+      section {
+        padding: 2rem;
+      }
+      .container {
+        max-width: 800px;
+        margin: auto;
+      }
+      .about-me {
+        background-color: wheat;
+        padding: 1rem;
+        border-radius: 5px;
+        margin-bottom: 2rem;
+      }
+      .speciality {
+        background-color: wheat;
+        padding: 1rem;
+        border-radius: 5px;
+        margin-bottom: 2rem;
+      }
+
+      footer {
+        background-color: gainsboro;
+        color: black;
+        text-align: center;
+        padding: 1rem;
+        bottom: 0;
+        width: 100%;
+      }
+      table,
+      tr,
+      th,
+      td {
+        border: 1px solid black;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Ki-Sun Kim의 포트폴리오</h1>
+    </header>
+    <nav>
+      <a href="#about">Who am I?</a>
+      <a href="#specialities">Specialites</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <section id="about">
+      <div class="container">
+        <h2>Who am I?</h2>
+        <div class="about-me">
+          <ul>
+            <li>이름: 김기선</li>
+            <li>학력 및 전공</li>
+            <ul style="list-style-type: circle">
+              <li>
+                <a href="https://www.seoultech.ac.kr/index.jsp" target="_blank"
+                  >서울과학기술대학교</a
+                ><br />
+                <a href="https://iise.seoultech.ac.kr/" target="_blank"
+                  >산업정보시스템</a
+                >
+              </li>
+            </ul>
+          </ul>
+          <hr />
+          <p>가치관</p>
+          <ol type="I">
+            <li>최선을 다하고 흘러가는대로 두어라</li>
+            <li>주어진 상황에서 효율적으로 해결하라</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+    <section id="specialities">
+      <div class="container">
+        <h2>Specialities</h2>
+        <div class="speciality">
+          <h3>Table</h3>
+          <hr />
+          <table>
+            <tr>
+              <th>종류</th>
+              <th>흥미(상,중,하)</th>
+              <th>실력(상,중,하)</th>
+            </tr>
+            <tr>
+              <td>드라이브</td>
+              <td colspan="2"><span style="color: red">상</span></td>
+            </tr>
+            <tr>
+              <td>당구</td>
+              <td rowspan="2"><span style="color: red">상</span></td>
+              <td>중</td>
+            </tr>
+            <tr>
+              <td>산책</td>
+              <td><span style="color: red">상</span></td>
+            </tr>
+            <tr>
+              <td>헬스</td>
+              <td>중</td>
+              <td>하</td>
+            </tr>
+            <tr>
+              <td>볼링</td>
+              <td colspan="2">하</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <br />
+    </section>
+
+    <footer id="contact">
+      <div class="container">
+        <p>Contact me: kskim0109@naver.com</p>
+      </div>
+    </footer>
+  </body>
+</html>
